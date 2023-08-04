@@ -12,7 +12,11 @@
 
   <body class="d-flex flex-column">
     <%= render 'layouts/navigation' %>
-    <%= render 'layouts/messages' %>    <! -- made a partial for the flash messages -->
-    <%= yield %>
+    <div id="page-content">
+      <%= render 'layouts/messages' %>    <! -- made a partial for the flash messages -->
+      <%= yield %>
+    </div>
+    <%= render 'layouts/footer' %>
   </body>
+  
 </html>
